@@ -1,0 +1,4 @@
+obj-y := mycall.o
+
+
+
