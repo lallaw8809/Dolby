@@ -1,0 +1,34 @@
+Procedure to port the kernel image on mini2440
+
+Tool_chain
+-------------------
+set the tool chain path
+	$export PATH=$PATH:Path_to_the_tool_chain
+
+Create a U-boot image (u-boot.bin)
+-----------------------------------
+
+step 1: go to the boot loader source code
+step 2: clean the source code
+	$make ARCH=arm CROSS_COMPILE=arm-linux- clean
+	$make ARCH=arm CROSS_COMPILE=arm-linux- distclean
+step 3: configure the device
+	$make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_defconfig
+step 3: compile and create a u-boot.bin
+	$make ARCH=arm CROSS_COMPILE=arm-linux-
+
+
+Create Kernel Image (uImage)
+-------------------------------
+step 1: go to the boot loader source code
+step 2: clean the source code
+	$make ARCH=arm CROSS_COMPILE=arm-linux- clean
+	$make ARCH=arm CROSS_COMPILE=arm-linux- distclean
+step 3: configure the device
+	$make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_n35_defconfig
+step 3: compile and create uImage
+	$make ARCH=arm CROSS_COMPILE=arm-linux- uImage
+
+
+	
+
