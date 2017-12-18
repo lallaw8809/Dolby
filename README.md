@@ -12,12 +12,12 @@ README      : Procedure of how to create a uImage and u-boot.bin
 # Procedure to port the kernel image on mini2440
 
 ## Download all required file from git:
-	$git clone https://github.com/lallaw8809/mini2440_Porting.git  
+	git clone https://github.com/lallaw8809/mini2440_Porting.git  
 
 ## Tool Chain:
 
 step 1: Export the current sdk path  
-	$export DIR=$PWD  
+	`export DIR=$PWD`  
 
 step 2: Open the tool_chain folder and export the path  
 	$cd $DIR/tool_chain/opt/FriendlyARM/toolschain/4.4.3/bin  
