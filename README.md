@@ -1,6 +1,6 @@
 # mini2440_source_code
 
-boot        : Bootloader source code							
+<br boot        : Bootloader source code />
 doc         : Board details
 final_image : Images (u-boot.bin and uImage)
 kernel      : Kernel souce code
