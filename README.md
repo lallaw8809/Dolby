@@ -14,7 +14,7 @@ README      : Procedure of how to create a uImage and u-boot.bin
 ## Download all required file from git:
 	git clone https://github.com/lallaw8809/mini2440_Porting.git  
 
-## Tool Chain:
+## Build configuration [ Tool Chain ]
 
 step 1: Export the current sdk path  
 	`export DIR=$PWD`  
@@ -61,7 +61,7 @@ step 6: compile and create a u-boot.bin
 	For successfull build will generate a `u-boot.bin`  
 
 
-# Create Kernel Image (uImage)
+# Create a Kernel Image (uImage) without file system [NFS]
 
 step 1: go to the kerenl source code Directory  
 	`cd $DIR/kernel`  
@@ -84,6 +84,23 @@ step 6: compile and create uImage
 
 	For successfull build will generate a kernel image at `arch/arm/boot/uImage`  
 
-
+# Create a Kernel Image (uImage) with file system
 	
+step 1: go to the kerenl source code Directory  
+	`cd $DIR/kernel/linux-2.6.29/`  
+
+step 2: clean the source code  
+	`make ARCH=arm CROSS_COMPILE=arm-linux- clean`  
+	`make ARCH=arm CROSS_COMPILE=arm-linux- distclean`  
+
+step 3: Set the File system path using menuconfig
+	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_menuconfig`  	
+
+step 4: configure the device  
+	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_defconfig`  
+
+step 5: compile and create uImage  
+	`make ARCH=arm CROSS_COMPILE=arm-linux- uImage`  
+
+	For successfull build will generate a kernel image at `arch/arm/boot/uImage`  
 
