@@ -85,19 +85,32 @@ step 6: compile and create uImage
 	For successfull build will generate a kernel image at `arch/arm/boot/uImage`  
 
 # Create a Kernel Image (uImage) with file system
-	
-step 1: go to the kerenl source code Directory  
+
+step 1: Get the path of file system  
+	`cd $DIR/root_fs`
+	`tar -xvf rootfs.tar`	
+
+	`pwd` will give the path to the root file system  
+
+step 2: Go to the kerenl source code Directory  
 	`cd $DIR/kernel/linux-2.6.29/`  
 
-step 2: clean the source code  
+step 3: clean the source code  
 	`make ARCH=arm CROSS_COMPILE=arm-linux- clean`  
 	`make ARCH=arm CROSS_COMPILE=arm-linux- distclean`  
 
-step 3: Set the File system path using menuconfig
-	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_menuconfig`  	
-
-step 4: configure the device  
+step 4: COnfigure the device  
 	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_defconfig`  
+
+step 5: Set the File system path using menuconfig  
+	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_menuconfig`  
+
+step 6: Set the file path  
+		General Setup
+		Initial RAM filesystem and RAM disk (initramfs/initrd) support [Enable]
+		Initramfs source file(s)
+		Paste the path to the rootfs
+		SAVE 
 
 step 5: compile and create uImage  
 	`make ARCH=arm CROSS_COMPILE=arm-linux- uImage`  
