@@ -106,11 +106,11 @@ step 5: Set the File system path using menuconfig
 	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_menuconfig`  
 
 step 6: Set the file path  
-		General Setup
-		Initial RAM filesystem and RAM disk (initramfs/initrd) support [Enable]
-		Initramfs source file(s)
-		Paste the path to the rootfs
-		SAVE 
+`General Setup`  
+`Initial RAM filesystem and RAM disk (initramfs/initrd) support [Enable]`  
+`Initramfs source file(s)`  
+`Paste the path to the rootfs`  
+`SAVE`  
 
 step 5: compile and create uImage  
 	`make ARCH=arm CROSS_COMPILE=arm-linux- uImage`  
