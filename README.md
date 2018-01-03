@@ -77,7 +77,7 @@ step 4: clean the source code
 	`make ARCH=arm CROSS_COMPILE=arm-linux- distclean`  
 
 step 5: configure the device  
-	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_n35_defconfig`  
+	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_defconfig`  
 
 step 6: compile and create uImage  
 	`make ARCH=arm CROSS_COMPILE=arm-linux- uImage`  
@@ -87,8 +87,8 @@ step 6: compile and create uImage
 # Create a Kernel Image (uImage) with file system
 
 step 1: Get the path of file system  
-	`cd $DIR/root_fs`
-	`tar -xvf rootfs.tar`	
+	`cd $DIR/root_fs`  
+	`tar -xvf rootfs.tar`  	
 
 	`pwd` will give the path to the root file system  
 
@@ -99,11 +99,11 @@ step 3: clean the source code
 	`make ARCH=arm CROSS_COMPILE=arm-linux- clean`  
 	`make ARCH=arm CROSS_COMPILE=arm-linux- distclean`  
 
-step 4: COnfigure the device  
-	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_defconfig`  
+step 4: Configure the device  
+	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_n35_defconfig`  
 
 step 5: Set the File system path using menuconfig  
-	`make ARCH=arm CROSS_COMPILE=arm-linux- mini2440_menuconfig`  
+	`make ARCH=arm CROSS_COMPILE=arm-linux- menuconfig`  
 
 step 6: Set the file path  
 `General Setup`  
