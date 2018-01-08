@@ -1,6 +1,6 @@
-# mini2440_source_code
+## mini2440_source_code
 
-# Procedure to port the kernel image on mini2440
+# Procedure to build the kernel image on mini2440
 
 ## Download all required file from git:
 	git clone https://github.com/lallaw8809/mini2440_Porting.git  
