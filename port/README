@@ -6,11 +6,11 @@ target devices and it involves first stage bootloader, second stage bootloader a
 Folders Structure :
 -------------------
 
-boot        : Holds the u-boot source code
+boot        : Bootloader source code
 doc         : Documents related to the mini2440
 final_image : Holds the images {u-boot.bin and uImage}
 install.sh  : Script to install the required packages
-kernel      : Holds the kernel source code
+kernel      : Kernel source code
 root_fs     : Holds root file system
 serial_bin  : serial USB downloaders which is required to flash the u-bootbin
 tool_chain  : Holds the required tool chain {arm-linux-*}
