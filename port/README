@@ -1,3 +1,7 @@
+Porting:
+--------
+	Porting menas that there is a source code (Boot loader and Kernel) avilable and it only needs to fine-tuned for
+target devices and it involves first stage bootloader, second stage bootloader and linux kernal porting.
 
 Folders Structure :
 -------------------
@@ -11,19 +15,3 @@ root_fs     : Holds root file system
 serial_bin  : serial USB downloaders which is required to flash the u-bootbin
 tool_chain  : Holds the required tool chain {arm-linux-*}
 
-Tool Chain :
------------
-
-U-boot :
---------
-	u-boot.bin
-	u-boot.img
-	MLO
-
-Kernel :
---------
-	uImage
-	zImage
-
-Root File System :
-------------------
