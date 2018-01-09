@@ -10,7 +10,7 @@
 step 1: Export the current sdk path  
 	`export DIR=$PWD`  
 	
-step 2: Install the required packages to compile the source code
+step 2: Install the required packages to compile the source code  
 	`sudo sh port/install.sh`
 
 step 3: Open the tool_chain folder and export the path  
