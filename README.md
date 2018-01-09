@@ -9,17 +9,20 @@
 
 step 1: Export the current sdk path  
 	`export DIR=$PWD`  
+	
+step 2: Install the required packages to compile the source code
+	`sudo sh port/install.sh`
 
-step 2: Open the tool_chain folder and export the path  
+step 3: Open the tool_chain folder and export the path  
 	`cd $DIR/tool_chain/opt/FriendlyARM/toolschain/4.4.3/bin`  
 
-step 3: Export the binaries ot set the tool chain path  
+step 4: Export the binaries ot set the tool chain path  
 	`export PATH=$PATH:$PWD`  
 
-step 4: Go to the sdk path  
+step 5: Go to the sdk path  
 	`cd $DIR`  
 
-Step 5: Validation of tool chain  
+Step 6: Validation of tool chain  
 	`arm-linux-gcc -v`  
    
 output will be:  
