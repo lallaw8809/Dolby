@@ -30,11 +30,15 @@ sudo apt-get install minicom
 sudo apt-get install tftpd-hpa
 sudo apt-get install nfs-kernel-server2
 sudo apt-get install nfs-common
-sudo apt-get install tftp tftpd tftp-hpa xienetd
+sudo apt-get install tftp
+sudo apt-get install tftpd
+sudo apt-get install xienetd
 # Tool chain
 sudo apt-get install libsdl1.2-dev
 sudo apt-get install lib32stdc++6
-sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0
+sudo apt-get install lib32z1
+sudo apt-get install lib32ncurses5
+sudo apt-get install lib32bz2-1.0
 # Menuconfig
 sudo apt-get install libncurses-dev
 echo 'Installation is done...'
